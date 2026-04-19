@@ -40,3 +40,11 @@ const isPalindrome = (str: string): boolean => {
 }
 // console.log(isPalindrome("hello"));   
 
+const sumOfArray = (nums: number[]): number => {
+    let sum = 0;    
+    for (let i = 0; i < nums.length; i++) {
+        sum += nums[i];
+    }
+    return sum;
+}
+// console.log(sumOfArray([0]));
