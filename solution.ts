@@ -48,3 +48,15 @@ const sumOfArray = (nums: number[]): number => {
     return sum;
 }
 // console.log(sumOfArray([0]));
+
+const countVowels = (str: string): number => {
+    const vowels = "aeiouAEIOU";
+    let count = 0;      
+    for (let i = 0; i < str.length; i++) {
+        if (vowels.includes(str[i])) {
+            count++;
+        }   
+    }
+    return count;
+}
+console.log(countVowels("Hello World"));
