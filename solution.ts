@@ -135,3 +135,8 @@ const removeDuplicates = (nums: number[]): number[] => {
 };
 
 // console.log(removeDuplicates([1,2,2,3,4,4,5,6,7,7]))
+
+const celsiusToFahrenheit = (celsius: number): number => {
+  return (celsius * 9) / 5 + 32;
+};
+// console.log(celsiusToFahrenheit(25))
