@@ -107,21 +107,31 @@ const multiplicationTable = (n: number): string[] => {
   for (let i = 1; i <= 10; i++) {
     result.push(`${n}x${i}= ${n * i}`);
   }
-  return result
+  return result;
 };
 
 // console.log(multiplicationTable(5))
 
-
-
-const isPrime  =(n: number):boolean=>{
-    if(n<=1) return false;
-    if(n===2) return true;
-    for(let i=2; i<=Math.sqrt(n); i++){
-        if(n%i===0){
-            return false
-        }
+const isPrime = (n: number): boolean => {
+  if (n <= 1) return false;
+  if (n === 2) return true;
+  for (let i = 2; i <= Math.sqrt(n); i++) {
+    if (n % i === 0) {
+      return false;
     }
-    return true
-}
+  }
+  return true;
+};
 // console.log(isPrime(7))
+
+const removeDuplicates = (nums: number[]): number[] => {
+  const result: number[] = [];
+  for (let i = 0; i < nums.length; i++) {
+    if (!result.includes(nums[i])) {
+      result.push(nums[i]);
+    }
+  }
+  return result;
+};
+
+// console.log(removeDuplicates([1,2,2,3,4,4,5,6,7,7]))
