@@ -20,3 +20,15 @@ const fizzbuzz = (n: number): string[] => {
 }
 
 // console.log(fizzbuzz(35))
+
+const largestNumber = (nums: number[]): number => {
+    let largest = nums[0]; 
+    for (let i = 1; i < nums.length; i++) {
+        if (nums[i] > largest) {
+            largest = nums[i];
+        }   
+
+    }
+    return largest;
+}
+// console.log(largestNumber([12, 44, 53, 25, 12, 29, 21,44,53]));
