@@ -59,4 +59,16 @@ const countVowels = (str: string): number => {
     }
     return count;
 }
-console.log(countVowels("Hello World"));
+// console.log(countVowels("Hello World"));
+
+const factorial = (n: number): number => {
+    if (n === 0 || n === 1) {
+        return 1;
+    }   
+    let result = 1;
+    for (let i = 2; i <= n; i++) {
+        result *= i;
+    }  
+    return result;
+}
+// console.log(factorial(0));
