@@ -140,3 +140,14 @@ const celsiusToFahrenheit = (celsius: number): number => {
   return (celsius * 9) / 5 + 32;
 };
 // console.log(celsiusToFahrenheit(25))
+
+const countCharacter = (str: string, char: string): number => {
+  let count = 0;
+  for (let i = 0; i < str.length; i++) {
+    if (str[i] === char) {
+      count++;
+    }
+  }
+  return count;
+};
+// console.log(countCharacter("hello","l"))
