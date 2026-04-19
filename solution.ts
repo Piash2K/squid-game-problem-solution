@@ -1,4 +1,4 @@
-const reverseStr = (str) => {
+const reverseStr = (str: string): string => {
     return str.split("").reverse().join("");
 }
 // console.log(reverseStr("I am a good boy"))
