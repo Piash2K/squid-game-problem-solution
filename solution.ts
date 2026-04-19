@@ -90,7 +90,6 @@ const fibonacciSequence = (n: number): number[] => {
 };
 // console.log(fibonacciSequence(10));
 
-
 const findMinimum = (nums: number[]): number => {
   let minimum = nums[0];
   for (let i = 1; i < nums.length; i++) {
@@ -102,3 +101,13 @@ const findMinimum = (nums: number[]): number => {
 };
 
 // console.log(findMinimum([44, 53, 25, 12, 29, 21,44,53]));
+
+const multiplicationTable = (n: number): string[] => {
+  const result: string[] = [];
+  for (let i = 1; i <= 10; i++) {
+    result.push(`${n}x${i}= ${n * i}`);
+  }
+  return result
+};
+
+// console.log(multiplicationTable(5))
