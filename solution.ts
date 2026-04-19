@@ -77,3 +77,17 @@ const filterEvenNumbers = (nums: number[]): number[] => {
     return nums.filter(num => num % 2 === 0);
 }
 // console.log(filterEvenNumbers([1, 2, 3, 4, 5, 6]));
+
+
+const fibonacciSequence = (n: number): number[] => {
+    if (n === 1) {
+        return [0];
+    }   
+    const sequence: number[] = [0, 1];
+    for (let i = 2; i < n; i++) {
+        const nextNumber = sequence[i - 1] + sequence[i - 2];
+        sequence.push(nextNumber);
+    }   
+    return sequence;
+}
+// console.log(fibonacciSequence(10));
