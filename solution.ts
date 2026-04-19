@@ -32,3 +32,11 @@ const largestNumber = (nums: number[]): number => {
     return largest;
 }
 // console.log(largestNumber([12, 44, 53, 25, 12, 29, 21,44,53]));
+
+const isPalindrome = (str: string): boolean => {
+    const cleanedStr = str.replace(/[^A-Za-z0-9]/g, "").toLowerCase();
+    const reversedStr = cleanedStr.split("").reverse().join("");
+    return cleanedStr === reversedStr;
+}
+// console.log(isPalindrome("hello"));   
+
